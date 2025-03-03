@@ -9,7 +9,7 @@ number:
 date:
 consensus: true
 v: 3
-area: "IRTF"
+area: ""
 workgroup: "Crypto Forum"
 keyword:
  - hpke
@@ -18,9 +18,9 @@ keyword:
  - SHA3
 venue:
   group: "Crypto Forum"
-  type: "Research Group"
+  type: ""
   mail: "cfrg@ietf.org"
-  arch: "https://mailarchive.ietf.org/arch/search/?email_list=cfrg"
+  arch: "https://mailarchive.ietf.org/arch/browse/cfrg"
   github: "dconnolly/draft-connolly-cfrg-sha3-hpke"
   latest: "https://dconnolly.github.io/draft-connolly-cfrg-sha3-hpke/draft-connolly-cfrg-sha3-hpke.html"
 
