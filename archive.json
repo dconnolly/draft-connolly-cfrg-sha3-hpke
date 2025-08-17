@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-08-14T00:15:45.362043+00:00",
+  "timestamp": "2025-08-17T00:17:17.629983+00:00",
   "repo": "dconnolly/draft-connolly-cfrg-sha3-hpke",
   "labels": [
     {
@@ -49,6 +49,23 @@
       "color": "ffffff"
     }
   ],
-  "issues": [],
+  "issues": [
+    {
+      "number": 1,
+      "id": "I_kwDOOCquoc7GURSM",
+      "title": "Is the proposed SHA3-based KDF intended as an HKDF-style two-stage design, or a one-stage design like SHAKE XOF?",
+      "url": "https://github.com/dconnolly/draft-connolly-cfrg-sha3-hpke/issues/1",
+      "state": "OPEN",
+      "author": "dajiaji",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "Hi @dconnolly,\n\nThank you for this valuable draft proposal.\n\nI am the author and maintainer of the hpke-js library. As I begin work on PQC support (still at an early stage), I am paying close attention to the direction of this KDF specification.\n\nI noticed that a one-stage KDF design using SHAKE as an XOF is already proposed in [draft-ietf-hpke-pq](https://datatracker.ietf.org/doc/draft-ietf-hpke-pq/).\n\nCould you clarify whether this draft intends to define a one-stage KDF based directly on SHA3-256, SHA3-384, or SHA3-512 (not SHAKE), or whether the intent is instead to provide an HKDF-style two-stage Extract/Expand construction using SHA3?\n\nIf the intent is the two-stage design, it would be very helpful to know whether both Extract and Expand are expected to use SHA3, or whether some mixed design (e.g., Extract with SHA3 and Expand with SHAKE) is under consideration.\n\nThanks!",
+      "createdAt": "2025-08-16T11:45:29Z",
+      "updatedAt": "2025-08-16T11:45:29Z",
+      "closedAt": null,
+      "comments": []
+    }
+  ],
   "pulls": []
 }
